@@ -10,4 +10,6 @@
 void cli(void);
 void sei(void);
 
+#define ISR(name) void name(void)
+
 #endif // MOCK_AVR_INTERRUPT_H
