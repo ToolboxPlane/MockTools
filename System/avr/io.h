@@ -9,6 +9,10 @@
 
 #include <stdint.h>
 
+// System Register
+extern uint8_t SREG;
+enum { SREG_C, SREG_Z, SREG_N, SREG_V, SREG_S, SREG_H, SREG_T, SREG_I };
+
 // IO
 extern uint8_t DDRA;
 extern uint8_t DDRB;
