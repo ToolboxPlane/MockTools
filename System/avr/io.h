@@ -102,5 +102,9 @@ extern uint8_t TCCR0A;
 extern uint8_t TCCR0B;
 extern uint8_t TIMSK0;
 extern uint8_t TCNT0;
+extern uint8_t TCCR2A;
+extern uint8_t TCCR2B;
+extern uint8_t TIMSK2;
+extern uint8_t TCNT2;
 
 #endif // MOCK_AVR_IO_H
