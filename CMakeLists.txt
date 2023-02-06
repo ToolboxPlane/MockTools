@@ -58,7 +58,7 @@ function(make_test)
     target_compile_definitions(${TestExecutable} PRIVATE -DTEST_NAME=${test_name})
 
     # Include mocked system directory
-    target_include_directories(${TestExecutable} PRIVATE ${CMAKE_CURRENT_FUNCTION_LIST_DIR}/System)
+    target_include_directories(${TestExecutable} PUBLIC ${CMAKE_CURRENT_FUNCTION_LIST_DIR}/System)
 
     # Link against GTest libraries
     target_link_libraries(${TestExecutable} PRIVATE gtest pthread)
